@@ -1,0 +1,21 @@
+@font-face {
+
+    font-family: Racing Sans One; /* Nome que vai ser usado para aplicar a Fonte */
+    
+    src: url(fontes/RacingSansOne-Regular.ttf);
+    
+}
+
+@font-face {
+
+    font-family: Roboto;
+
+    src: url(fontes/Roboto-Regular.ttf);
+}
+
+@font-face {
+    
+    font-family: Roboto Slab;
+    
+    src: url(fontes/RobotoSlab-Thin.ttf);
+}
