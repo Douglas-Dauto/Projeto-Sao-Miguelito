@@ -18,9 +18,9 @@ for(let i = 0; i < itensHeader.length; i++) {
 document.addEventListener('scroll', () => {
     if(window.scrollY < 600) {
         btn(0);
-    } else if(window.scrollY >= 600 && window.scrollY <= 1299) {
+    } else if(window.scrollY <= 1299) {
         btn(1);
-    } else if(window.scrollY >= 1300 && window.scrollY <= 4265) {
+    } else if(window.scrollY <= 4265) {
         btn(2)
     } else {
         btn(3);
