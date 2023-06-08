@@ -1,6 +1,7 @@
 const itensHeader = document.querySelectorAll('.lista__item');
 const videoWhat = document.getElementsByClassName('contain9__what');
 const tumbVideo = document.getElementsByClassName('imgTumbVideo');
+const textoMais = document.getElementsByClassName('contain8__mais')[0];
 
 itensHeader[0].setAttribute('class', 'lista__item--bg lista__item')
 
@@ -33,4 +34,28 @@ for(let i = 0; i < tumbVideo.length; i++) {
         tumbVideo[i].setAttribute('class', 'imgTumbVideo imgTumbVideoOff');
         videoWhat[i].play();
     });
+}
+
+ativarTextoMais();
+function ativarTextoMais() {
+    let controle = true;
+
+    document.addEventListener('scroll', () => {
+        if(window.scrollY >= 1868 && controle === true) {
+            contarTextoMais(controle);
+            controle = false;
+        }
+    });
+}
+
+function contarTextoMais(valor) {
+    if(valor) {
+        for(let i = 0; i <= 15000; i++) {
+            setTimeout(() => inserirTextoMais(i), 500);
+        }
+    }
+}
+
+function inserirTextoMais(valor) {
+    textoMais.innerHTML = `Mais De ${valor}`;
 }
