@@ -635,6 +635,54 @@ header {
     flex-direction: row;
     justify-content: center;
     cursor: grab;
+    position: relative;
+    padding: 0 5px;
+}
+
+.contain9-content__previos {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    left: -15px;
+    background: url(imagens/icons8-seta-para-recolher-26.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contain9-content__previos:hover {
+    background: url(imagens/icons8-seta-para-recolher-26-amarelo.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.contain9-content__next {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    right: -15px;
+    background: url(imagens/icons8-seta-para-recolher-26.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contain9-content__next:hover {
+    background: url(imagens/icons8-seta-para-recolher-26-amarelo.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
 }
 
 .contain9__img {
@@ -661,6 +709,48 @@ header {
 .contain9__bg3 {
     background-color: rgb(255, 187, 0);
     background: url(imagens/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.contain9__bg4 {
+    background-color: rgb(255, 187, 0);
+    background: url(imagens/bg1-nlow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.contain9__bg5 {
+    background-color: rgb(255, 187, 0);
+    background: url(imagens/bg2-nlow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.contain9__bg6 {
+    background-color: rgb(255, 187, 0);
+    background: url(imagens/bg3-nlow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.contain9__bg7 {
+    background-color: rgb(255, 187, 0);
+    background: url(imagens/bg4-nlow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.contain9__bg8 {
+    background-color: rgb(255, 187, 0);
+    background: url(imagens/bg5-nlow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.contain9__bg9 {
+    background-color: rgb(255, 187, 0);
+    background: url(imagens/bg6-nlow.jpg);
     background-repeat: no-repeat;
     background-size: cover
 }
@@ -1160,7 +1250,7 @@ footer {
 
 @media screen and 
     (max-width: 1232px) {
-        .contain9__bg3 {
+        .contain9__bg3, .contain9__bg5, .contain9__bg6, .contain9__bg8, .contain9__bg9 {
             display: none;
         }
 
@@ -1176,7 +1266,7 @@ footer {
 
 @media screen and
     (max-width: 826px) {
-        .contain9__bg2 {
+        .contain9__bg2, .contain9__bg5, .contain9__bg6, .contain9__bg8, .contain9__bg9 {
             display: none;
         }
 
@@ -1184,7 +1274,7 @@ footer {
             width: 100%;
         }
 
-        .contain9__bg1 {
+        .contain9__img {
             background-size: 100%;
             width: 50vw;
             height: 50vw;
